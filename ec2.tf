@@ -1,3 +1,8 @@
+provider "aws" {
+  region = "ap-southeast-1"
+}
+
+
 resource "aws_instance" "foo"{
  ami="ami-074dc0a6f6c764218"
  instance_type=local.instancetype
